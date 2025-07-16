@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://book-be-p3cv.onrender.com/api", // Use env variable for backend
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:8080/api", // Use env variable for backend
   timeout: 10000, // 10 seconds timeout
   headers: {
     "Content-Type": "application/json",
